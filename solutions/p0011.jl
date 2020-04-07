@@ -72,4 +72,4 @@ function main(grid)
 end
 
 
-main(grid)
+@time main(grid)

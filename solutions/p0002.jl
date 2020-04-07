@@ -5,7 +5,7 @@ function main()
     while b <= 4_000_000
         if b % 2 == 0
             sum += b
-        end 
+        end
         c = a + b
         a, b = b, c
     end
@@ -13,4 +13,4 @@ function main()
 end
 
 
-main()
+@time main()

@@ -22,4 +22,4 @@ function get_nth_prime_number(n)
 end
 
 
-println("Solution: $(get_nth_prime_number(10_001))")
+@time println("Solution: $(get_nth_prime_number(10_001))")

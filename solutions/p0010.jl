@@ -32,4 +32,4 @@ function is_prime(c)
 end
 
 
-println("Solution: $(sum(filter(is_prime, 2:2_000_000)))")
+@time println("Solution: $(sum(filter(is_prime, 2:2_000_000)))")

@@ -18,8 +18,7 @@ function get_largest_prime_factor(n, p)
             p += 1
         end
     end
-    return p
+    println("The largest prime factor of $n is: $p")
 end
 
-lpf = get_largest_prime_factor(n, p)
-println("The largest prime factor of $n is: $lpf")
+@time get_largest_prime_factor(n, p)

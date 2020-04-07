@@ -46,4 +46,4 @@ function main()
 end
 
 
-main()
+@time main()

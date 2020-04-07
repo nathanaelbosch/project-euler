@@ -6,12 +6,17 @@
 
 is_pythagorean_triplet(a, b, c) = a^2 + b^2 == c^2
 
-for a in 1:(1000 ÷ 3)        # a<b<c => Can only be max a third of the rest
-    for b in a:((1000-a)÷2)  # b<c => Can only be max half of the rest
-        c = 1000 - a - b     # Is already defined by a and b
-        if is_pythagorean_triplet(a, b, c)
-            println("The Tuple is: $((a, b, c))")
-            println("The Product is: $(a*b*c)")
+function main()
+    for a in 1:(1000 ÷ 3)        # a<b<c => Can only be max a third of the rest
+        for b in a:((1000-a)÷2)  # b<c => Can only be max half of the rest
+            c = 1000 - a - b     # Is already defined by a and b
+            if is_pythagorean_triplet(a, b, c)
+                println("The Tuple is: $((a, b, c))")
+                println("The Product is: $(a*b*c)")
+            end
         end
     end
 end
+
+
+@time main()

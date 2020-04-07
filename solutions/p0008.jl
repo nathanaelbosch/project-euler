@@ -16,4 +16,4 @@ function main(n)
     return max_prod
 end
 
-println(main(n))
+@time println(main(n))

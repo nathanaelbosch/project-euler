@@ -4,4 +4,4 @@
 # Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
 
-println(sum(1:100)^2 - sum((1:100) .^ 2))
+@time println(sum(1:100)^2 - sum((1:100) .^ 2))

@@ -15,4 +15,4 @@ function main(numbers)
 end
 
 
-main(collect(1:20))
+@time main(collect(1:20))
